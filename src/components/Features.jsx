@@ -1,10 +1,4 @@
 import React from "react";
-
-const items = [
-  { title: "Live Prompts", text: "Surface key talking points in real time." },
-  { title: "Smart Nudges", text: "Get gentle reminders without interrupting your flow." },
-  { title: "Instant Notes", text: "Summaries appear seconds after your call ends." },
-  { title: "Contextual cues", text: "Real-time topic suggestions that help you" },
 ];
 
 export default function Features() {
