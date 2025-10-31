@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans antialiased bg-white text-slate-900;
+}
+
+.badge {
+  @apply rounded-full px-4 py-2 text-sm font-medium;
+}
+
+.card {
+  @apply bg-white rounded-2xl border border-slate-200 shadow-card;
+}
+
+/* blue glow under the video */
+.ripple-under {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  max-width: 980px;
+  height: 240px;
+  top: -30px;
+  pointer-events: none;
+  filter: blur(28px);
+  background: radial-gradient(
+    60% 60% at 50% 50%,
+    rgba(47, 136, 255, 0.2),
+    rgba(47, 136, 255, 0.1) 45%,
+    rgba(23, 62, 123, 0.06) 70%,
+    transparent 75%
+  );
+}
